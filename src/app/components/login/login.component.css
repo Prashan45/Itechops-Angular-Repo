@@ -1,0 +1,86 @@
+/* CSS for Login Form */
+
+/* Container */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-right: 20px;
+
+  }
+  
+  /* Inputs */
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message */
+  div[role="alert"] {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Additional Links Container */
+  .additional-links {
+    text-align: center; /* Center-align content */
+    margin-top: 20px; /* Add some space between the form and the links */
+  }
+  
+  /* Additional Styling */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .login-container {
+      width: 90%;
+    }
+  }
+  

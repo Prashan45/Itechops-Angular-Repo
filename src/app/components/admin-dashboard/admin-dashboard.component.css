@@ -1,0 +1,176 @@
+/* Style for the table container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  /* Style for table headers */
+  table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for table rows */
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for table cells */
+  table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for profile pictures */
+  table tbody td img {
+    border-radius: 50%;
+  }
+  
+  .add-user-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editbutton{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editbutton:hover {
+    background-color: #45a049;
+  }
+  
+  .detelebutton{
+    background-color: #f10d0d;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .deletebutton:hover {
+    background-color: #f10d0d;
+  }
+
+  /* Style for the "Add User" button */
+  .add-user-btn {
+    background-color: #008CBA;
+    margin-top: 20px;
+  }
+  
+  .add-user-btn:hover {
+    background-color: #007B9E;
+  }
+  
+  /* Style for the message when no users are available */
+  .no-users {
+    font-size: 20px;
+    color: #777;
+    margin-top: 20px;
+  }
+  /* CSS for User Management Form */
+
+/* Container */
+.user-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: calc(100% - 22px); /* Adjust for padding and border */
+}
+
+/* File Input */
+input[type="file"] {
+  padding: 6px;
+}
+
+/* Buttons */
+button[type="submit"],
+button[type="button"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Add some spacing between buttons */
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Image Preview */
+.img-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.img-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .user-form {
+    width: 90%;
+    margin: 10px auto;
+  }
+}

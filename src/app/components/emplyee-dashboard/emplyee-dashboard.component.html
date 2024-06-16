@@ -1,0 +1,40 @@
+<div *ngIf="!showForm && !showDetails">
+  <div *ngIf="newusers.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Profile Picture</th>
+          <th>Name</th>
+          <th>Contact</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of newusers">
+          <td>
+            <img *ngIf="user.profilePicture" [src]="user.profilePicture" alt="Profile Picture" style="width: 50px; height: 50px;" />
+          </td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.contact }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <button class="editbutton" (click)="showUserDetails(user)">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="newusers.length === 0" class="no-users">
+    No users to display.
+  </div>
+</div>
+
+<div *ngIf="showDetails && selectedUser">
+  <h2>User Details</h2>
+  <img *ngIf="selectedUser.profilePicture" [src]="selectedUser.profilePicture" alt="Profile Picture" style="width: 100px; height: 100px;" />
+  <p><strong>Name:</strong> {{ selectedUser.name }}</p>
+  <p><strong>Contact:</strong> {{ selectedUser.contact }}</p>
+  <p><strong>Email:</strong> {{ selectedUser.email }}</p>
+  <button (click)="backToTable()">Back</button>
+</div>
